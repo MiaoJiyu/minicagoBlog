@@ -184,6 +184,7 @@ $$ y = kx + b $$
 **时间复杂度**：插入 $O(\log^2 N)$，查询 $O(\log N)$，支持任意顺序操作。
 
 ### 李超树实现
+
 ```cpp
 struct Line { ll m, b; };
 struct Node { Line f; Node *l, *r; };
