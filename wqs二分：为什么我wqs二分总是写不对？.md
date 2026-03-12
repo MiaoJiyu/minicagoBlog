@@ -97,7 +97,7 @@ $$
 
 如图：
 
-![image](image/wqs二分/wqs-f-g-space.svg)
+![image](image/wqs/wqs-f-g-space.svg)
 
 图中的红点和蓝点是 $X$ 中所有可能的选择投影在平面 $(g(x), f(x))$ 上得到的集合 $\mathcal D$．于是，原问题所要求的就是横坐标为 $y$ 的那些点中，纵坐标的最小值 $v(y)$．当 $y$ 变动时，所有这样的点 $(y,v(y))$ 就构成了图中的红点的集合．
 
