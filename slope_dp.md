@@ -1,4 +1,9 @@
-# 斜率优化dp问题
+```metadata
+title: 斜率优化dp
+date: 2026-03-16 11:00
+category: 动态规划
+difficulty: medium+
+```
 
 斜率优化dp问题是优化dp的**转移复杂度**的一个工具，其实现的功能是快速计算出动态规划转移的**决策点**
 

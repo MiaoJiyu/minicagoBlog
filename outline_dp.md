@@ -1,4 +1,9 @@
-# 轮廓线动态规划
+```metadata
+title: 从状态压缩到轮廓线动态规划
+date: 2026-03-16 11:00
+category: 动态规划
+difficulty: medium
+```
 
 ## 轮廓线的思路
 

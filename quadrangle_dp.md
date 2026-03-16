@@ -1,4 +1,9 @@
-# 决策单调性
+```metadata
+title: 决策单调性
+date: 2026-03-16 11:00
+category: 动态规划
+difficulty: hard
+```
 
 考虑以下动态规划模型：
 

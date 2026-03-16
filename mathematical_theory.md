@@ -1,4 +1,9 @@
-# 数论
+```metadata
+title: 数论
+date: 2026-03-16 11:00
+category: 数学
+difficulty: medium
+```
 
 ## 知识点
 
