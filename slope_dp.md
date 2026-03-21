@@ -43,7 +43,7 @@ $$
 
 $$cost_1(x) = (pre_x+x-1-L)^2$$
 
-$$cost_2(x) = f_x + (pre_x + x)^2 $$
+$$cost_2(x) = f_x + (pre_x + x)^2$
 
 $$cost_3(x) = 2 \cdot (pre_i+i-1-L)$$
 
@@ -154,9 +154,9 @@ $$f_i = \max_{j \in D(i)} cost_1(i) + cost_2(j) + cost_3(i) \cdot cost_4(j)$$
 
 先不考虑最大值符号，考虑对于确定的j，式子可以转为
 
-$$ -cost_2(j) =  cost_3(i) \cdot cost_4(j) + cost_1(i) - f_i $$
+$-cost_2(j) =  cost_3(i) \cdot cost_4(j) + cost_1(i) - f_i$
 
-$$ y = kx + b $$
+$y = kx + b$
 
 其中 $ x = cost_4(j) , y = -cost_2(j), k = cost_3(i), b = cost_1(i) - f_i $
 
@@ -220,7 +220,7 @@ $$f_i = \max_{j \in D(i)} cost_1(i) + cost_2(j) + cost_3(i) \cdot cost_4(j)$$
 
 $$f_i - cost_1(i) = cost_2(j) \cdot cost_3(i) + cost_4(j)$$
 
-$$ y = kx + b $$
+$y = kx + b$
 
 其中 $k = cost_2(j), cost_4(j) = b, x  = cost_3(i)$
 

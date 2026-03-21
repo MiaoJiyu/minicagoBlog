@@ -19,7 +19,7 @@ difficulty: medium
 
 对于这个问题容易给出动态转移方程：
 
-$$ f_S = \min_{S' \subset S \And weight(S') < W} (f_{S/S'} + 1) $$
+$f_S = \min_{S' \subset S \And weight(S') < W} (f_{S/S'} + 1)$
 
 其中 $f_S$ 表示的是将集合$S$的奶牛运送完成所需的最小电梯次数。
 
@@ -28,9 +28,9 @@ $$ f_S = \min_{S' \subset S \And weight(S') < W} (f_{S/S'} + 1) $$
 **进一步优化**
 我们为了避免**枚举一个集合**，我们可以每次枚举集合添加的元素：
 
-$$ f_{S,m} = \min_{a \in S} f_{S/a ,m - w_a} $$
+$f_{S,m} = \min_{a \in S} f_{S/a ,m - w_a}$
 
-$$ f_{S,0} = f_S + 1$$
+$f_{S,0} = f_S + 1$$
 
 其中 $f_{S,m}$ 表示的是将集合$S$的奶牛运送完成，最后一个电梯奶牛的重量和为$m$,所需的最小电梯次数。
 
@@ -60,7 +60,7 @@ $$ f_{S,0} = f_S + 1$$
 
 **传统的动态规划做法**
 
-$$ f_{i, S_1,S_2} = \min_{available(S_1,S_2,S_3)} (f_{i-1, S_2,S_3} + count(S_1)) $$
+$f_{i, S_1,S_2} = \min_{available(S_1,S_2,S_3)} (f_{i-1, S_2,S_3} + count(S_1))$
 
 其中 $f_{S_1,S_2}$ 表示第$i$行的炮兵集合为$S_1$,第$i - 1$行的炮兵集合为$S_2$的最多的炮兵数量, $available(S_1,S_2,S_3)$ 是表示检查集合的合法性， $count(S)$ 是计算集合中的`1`的个数。
 
@@ -74,7 +74,7 @@ $$ f_{i, S_1,S_2} = \min_{available(S_1,S_2,S_3)} (f_{i-1, S_2,S_3} + count(S_1)
 
 其中红色格子是表示第$i$行，第$j$列的格子,即$i=4$,$j=3$。$S$涉及到的格子是黄色标记的，其中的数字表示是在状压的数字的第几位。
 
-$$ f_{i,j,S} = \min_{available(S.set(j,S[j+m]).set(j+m,0/1))} f_{i,j-1,S.set(j,S[j+m]).set(j+m,0/1)} + 0/1 $$
+$f_{i,j,S} = \min_{available(S.set(j,S[j+m]).set(j+m,0/1))} f_{i,j-1,S.set(j,S[j+m]).set(j+m,0/1)} + 0/1$
 
 $ S.set(a,b) $ 表示将 $S$ 的第 $a$ 位变为 $b$
 
